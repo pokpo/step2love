@@ -3,6 +3,12 @@
     margin: 0 auto;
 }
 
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
 .header{
     margin-top: -20px;
 }
@@ -70,4 +76,99 @@
     margin: 0 5px -7px;
     vertical-align: bottom;
     cursor: pointer;
+}
+
+.aside{
+    float: left;
+    padding: 10px 22px 0 70px;
+}
+
+.aside__info{
+    background: #f8f7f7;
+    width: 327px;
+    border: 1px solid #d6d6d6;
+    
+}
+
+.aside-info__left{
+    width: 195px;
+    float: left;
+}
+
+.aside-info-left__wrapper-avatar{
+    margin: 11px 0 15px 15px;
+    float: left;    
+}
+
+.aside-info-left__namebox{
+    padding-bottom: 20px;
+    margin-left: -14px;
+    width: 130px;
+    float: right;
+}
+
+.aside-info-left-namebox__name-wrapper{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.aside-info-left-namebox__name-link{
+    text-decoration: underline 2px;
+    color: #7e7e7e;
+    font-size: 22px;  
+}
+
+.aside-info-left-namebox__buy-link,.aside-info-left-namebox__get-link{
+    text-decoration: none;
+    color: #fff;
+    background: url(../image/aside__name-buy.png) center no-repeat;
+    padding: 6px 19px;
+}
+
+.aside-info-left-namebox__get-link{
+    background: url(../image/aside__name-get.png) center no-repeat;
+}
+
+.aside-info-left-namebox__botton-wrapper{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.aside-info__right{
+    width: 130px;
+    float: right;
+}
+
+.aside-info-right__wrapper-pen{
+    margin: 8px 15px 0 0;
+    float: right;
+    cursor: pointer;
+}
+
+.aside-info-right__credits{
+    clear: right;
+    padding-top: 9px; 
+}
+
+.aside-info-right-credits__counting,.aside-info-right-credits__name,.aside-info-right-credits__disstatus{
+    color: #459025;
+    font-size: 20px;
+    margin: 15px 0 0;
+    font-weight: 600;
+}
+
+.aside-info-right-credits__counting,.aside-info-right-credits__name{
+    display: inline-block;
+}
+
+.aside-info-right-credits__name{
+    color: #6d6d6d;
+    font-weight: 400;
+}
+
+.footer{
+    width: 1900px;
+    border-top: 8px solid #4fbdf0;
+    clear: both;
+    margin: 0 auto;
 }
